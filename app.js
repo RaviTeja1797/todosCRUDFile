@@ -21,8 +21,21 @@ Server started listening at http://localhost:3000/`)
         })
     }catch(e){
         console.log(`Database Error ${e.message}`)
-        process.exit(1)
+        process.exit(1);
     }
 }
 
 initializeDBAndServerAtPort3000();
+
+
+
+//API - 3 addTodo - POST METHOD
+
+expressAppInstance.post('/todos/', (request, response)=>{
+    
+    let todoObject = request.body
+    let {todo, priority, status} = todoObject;
+    console.log(todo, priority, status);
+
+});
+
