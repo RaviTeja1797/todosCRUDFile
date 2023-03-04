@@ -1,0 +1,8 @@
+post http://localhost:3001/todo/
+
+Content-Type: application/json
+{
+    "todo": "Hello",
+    "priority": "high",
+    "status": "low"
+}
