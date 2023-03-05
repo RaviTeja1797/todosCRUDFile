@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //API-1 getTodo
 get http://localhost:3002/todos/
 ###
@@ -67,3 +68,15 @@ delete http://localhost:3002/todos/4
 ###
 
 
+=======
+//API - 3 addTodo - POST METHOD
+POST http://localhost:3000/todos/
+
+Content-Type : application/json
+
+{
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+>>>>>>> origin/master
